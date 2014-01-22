@@ -196,3 +196,7 @@ preserve it.
 
 If you like this reading or feel in similar way about your Linux experience
 you may also like [NixOS](http://nixos.org) and [GoboLinux](http://www.gobolinux.org).
+
+Authors
+-------
+Borislav Peev (borislav.asdf at gmail dot com)
