@@ -163,7 +163,7 @@ if ( hasAge ) {
 
 Here because "hasAge" is somehow descriptive we can assume the intention of
 this expression is to determine if something has a valid age. But what if the
-examples looks likes this:
+example looks likes this:
 
 ```js
 var age = 0;
@@ -228,7 +228,7 @@ it happens at runtime that age is not integer at all, but maybe an array or
 object or something else, the condition will evaluate correctly because the
 variable will not be greater than zero. And further in the above example where
 I say "not age" means nothing. Yes it means something if we assume that age is
-integer and we know how JavaScript apply logical "not" to integers and
+integer and we know how JavaScript applies logical "not" to integers and
 converts them to truthfulness. But this is not clean nor expressive nor well
 defined logic. This is something specific to how JavaScript treats numbers.
 Numbers and any other type have nothing to do with truthfulness. It is
@@ -260,7 +260,7 @@ users start to see that their software provider is not providing the best for
 them anymore. Otherwise the developers are sacrificing the beauty of their
 work and make unpleasant effort for it. So they make unpleasant efforts to
 produce uglier results and provide inferior experience to some users in order
-that they can not change, although this change is beneficial for everyone.
+that the latter can not change, although this change is beneficial for everyone.
 This makes no sense. In this way the developers damage themselves directly and
 damage the world indirectly by slowing down progress.
 
