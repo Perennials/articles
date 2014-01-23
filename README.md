@@ -18,6 +18,10 @@ Collection of articles relevant for developers
 
 [Advanced error handling in PHP](https://github.com/Perennials/articles/blob/master/Advanced-error-handling-in-PHP.md)
 
+#### Version control
+
+[Some git concepts explained simply](https://github.com/Perennials/articles/blob/master/Some-git-concepts-explained-simply.md)
+
 #### Further related
 
 [Making Linux portable](https://github.com/Perennials/articles/blob/master/Making-Linux-portable.md)  
