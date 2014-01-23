@@ -12,6 +12,9 @@ terms like "revision" and "commit" interchangeably. What is called "revision"
 in SVN is called "commit" in git. But there is also the action of committing,
 which is somehow different from the act of committing in SVN.
 
+If you are new to git I suggest you start with a good GUI client, like SourceTree,
+and take the concepts one by one as you move along.
+
 
 Local repositories
 ------------------

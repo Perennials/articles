@@ -55,7 +55,7 @@ Earthling.prototype = {
 };
 ```
 
-While this works it is a bit dirty, because all properties of the object are
+While this works, it is a bit dirty, because all properties of the object are
 enumerable and will show in our for-in loops and other places we probably don't
 want to. We can use `Object.defineProperty()` instead. This function is able to
 set properties in a more elaborate way and by default they are not enumerable.
@@ -69,8 +69,7 @@ Object.defineProperty( Earthling.prototype, 'getType', {
 } );
 ```
 
-Lets look into inheritance. Inheritance is done by assigning a prototype
-of the prototype.
+Lets look into inheritance. Inheritance is done by assigning a prototype.
 ```js
 // declare new type
 function Cat () {
