@@ -108,27 +108,27 @@ var toString = Object.prototype.toString; //excerpt from jQuery
 var array = [ 1, 2, 3 ];
 
 $( '#div0' ).text( 'Testing 1 million loops...' );
-    var t1 = (new Date()).valueOf();
+    var t1 = Date.now();
     var n = 0;
     for ( var i = 0; i < 1000000; ++i ) {
         if ( toString.call( array ) === '[object Array]' ) {
             ++n;
         }
     }
-    t1 = ( (new Date()).valueOf() - t1 ) / 1000;
+    t1 = ( Date.now() - t1 ) / 1000;
 $( '#div1' ).text( 'The first snippet ate ' + t1 + ' seconds of your users\' experience' );
 
 $( '#div2' ).text( 'Testing 1 million loops...' );
-    var t2 = (new Date()).valueOf();
+    var t2 = Date.now();
     n = 0;
     for ( var i = 0; i < 1000000; ++i ) {
         if ( array instanceof Array ) {
             ++n;
         }
     }
-    t2 = ( (new Date()).valueOf() - t2 ) / 1000;
+    t2 = ( Date.now() - t2 ) / 1000;
 $( '#div3' ).text( 'The second snippet ate ' + t2 + ' seconds of your users\' experience' );
-$( '#div4' ).text( 'Second snippet is ~' + parseInt( t1 / t2 ) + 'x faster' );​
+$( '#div4' ).text( 'Second snippet is ~' + parseInt( t1 / t2 ) + 'x faster' );
 ```
 
 On my machine (Chrome 22) the results are:
