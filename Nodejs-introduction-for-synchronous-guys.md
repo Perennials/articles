@@ -53,6 +53,11 @@ var fileDescriptor2 = Fs.openSync( 'file2.txt', 'r' );
 // now we can use the file descriptor (in absence of errors)
 ```
 
+When we use synchronous call, our `open()` function will not return before it
+either open the file or fail to open it. When we use asynchronous calls the
+function will return immediately and the file will be opened in the background
+and we will receive notification when it is open or if there were some error.
+
 ```js
 // async logic
 
