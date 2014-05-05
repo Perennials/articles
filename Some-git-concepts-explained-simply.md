@@ -15,6 +15,17 @@ which is somehow different from the act of committing in SVN.
 If you are new to git I suggest you start with a good GUI client, like SourceTree,
 and take the concepts one by one as you move along.
 
+SSH keys
+--------
+There are different ways to authenticate with git, but the most reliable one
+is using SSH keys. There is help else where so I just want to explain the
+idea. You generate a key, it has private and public part. The private part
+stays with you and you add the public part to your GitHub account (or other
+git hosting provider). This way your account becomes associated with the key
+and whenever you use git, it will authenticate with the key and will have the
+same rights to the repositories as your user account. For more info
+[check here](https://help.github.com/articles/generating-ssh-keys).
+
 
 Local repositories
 ------------------
