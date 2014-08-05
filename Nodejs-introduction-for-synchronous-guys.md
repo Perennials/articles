@@ -105,7 +105,7 @@ Fs.close( fileDescriptor1, function ( error ) {
 				// only at this point the file is deleted
 			}
 		} );
-		// at this point the file may still exists,
+		// at this point the file may still exist,
 		// not only that but our program can not terminate
 		// only after the unlink() callback is finished, the program can close
 	}
@@ -119,7 +119,7 @@ operation only after _all_ the files are closed. But first why do we want to use
 async calls in this case? Because of performance. If we use sync calls, the time
 it takes to close all files will be the sum of the time to close each individual
 file. If we use async mode, the time it takes to close all files will be the
-time it takes to close the slowest it takes to close one individual file.
+time it takes to close the slowest individual file.
 
 ```js
 // async logic
@@ -171,7 +171,7 @@ since `close()` is synchronous, even less what happens on other systems like Win
 Well it happens that nodejs's behavior in regards to callbacks is consistent,
 and callbacks are called "on next tick" (read more below), so this edge case
 will not actually occur, but this is something that is not documented and you
-can learn by experience and by looking at the sources, and the latter is not a
+can learn by experience and by looking at the sources, and the latter is not
 something that anyone in their right mind should expect from their users. I
 wanted to point nevertheless that async logic can be very tricky.
 
@@ -200,7 +200,7 @@ it is registered after the event has finished. This sort of problems may be
 hard to detect and reproduce because they depend on timing - on the speed
 of your computer, how busy it is at the time, how fast your Internet connection
 is, if the remote server is busy or not, etc. So it often happens that something
-seemingly run but later problems start to popup inconsistently.
+seemingly runs but later problems start to popup inconsistently.
 
 If the object returned by the constructor was a "promise", it would keep track
 that the open event has occurred and once the event listener is registered it
