@@ -19,12 +19,12 @@ What's the big deal about nodejs?
 ---------------------------------
 
 ### Nodejs against PHP/Apache
-Nodejs works differently from PHP. With PHP often Apache (the web server) runs
+Nodejs works different from PHP. With PHP often Apache (the web server) runs
 all the time and starts PHP whenever there is request. Nodejs serves itself.
 I.e. the script itself acts as HTTP server so the same script does the job of
 Apache and of PHP, in the same process. If the script stops we don't have a web
 server anymore. So one needs to think about nodejs in web applications a bit
-differently. In production we need to do with it how we do with Apache - start
+different. In production we need to do with it how we do with Apache - start
 it on machine boot time. And after we update the script we need to restart the
 process, because the original script is already loaded in memory and if we only
 replace the script it will not affect anything. This may look unfamiliar at first
@@ -35,7 +35,7 @@ and HTTP has nothing to do with serving files.
 Nodejs achieves good performance by accessing OS resource (files, sockets)
 asynchronously, this means you can start opening another file _while_ opening
 the first file. So node makes heavy use of callbacks and the program
-flow/logic maybe quite different in some cases. Node also provides synchronous
+flow/logic may be quite different in some cases. Node also provides synchronous
 version of most functions, but it is still important to understand how the
 async logic works. Here is the basic idea.
 
@@ -72,7 +72,7 @@ Fs.open( 'file2.txt', 'r' );
 // and at this point we don't know if there is error or not
 
 // so we need to use callbacks to be notified when an IO operation finishes
-fs.open( 'file1.txt', 'r', function ( error, fileDescriptor ) {
+Fs.open( 'file1.txt', 'r', function ( error, fileDescriptor ) {
 	if ( error ) {
 		// do some error handling if we need
 		return;
