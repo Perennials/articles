@@ -56,7 +56,7 @@ practices at times.
 
 And even worse. jQuery is not a framework, it is a glue, a collection of
 helper functions that solve cross browser issues and simplify some tasks. Yet
-because everything is so easy with it people are abusing and use it as a
+because everything is so easy with it people are abusing it by using it as a
 framework. Normally one evolves some kind of structure, own helper functions
 or own mini-framework, based on the low level APIs that the platform provides,
 such as vanilla JS. But with jQ this is not the case. Everything is based on
