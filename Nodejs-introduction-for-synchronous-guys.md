@@ -251,10 +251,10 @@ level they are local to the module and the module need to export variables and
 methods explicitly.
 
 Deeply integrated in the nodejs ecosystem is npm - node package manager. npm is
-an application that allows you to connect to a central repository and will
+an application that allows you to connect to a central repository and with
 simple command like `npm install websocket` gives access to thousands and
-thousands packages uploaded by the users. It also can be used so can upload his
-own package (and other things). All packages are listed on npmjs.org and they
+thousands packages uploaded by the users. It also can be used so one can upload his
+own package (among other things). All packages are listed on npmjs.org and they
 are usually hosted on GitHub. In this way although node's built-in capabilities
 contain only the essentials, in the end node has more libraries than, for
 example, PHP. Additionally node is relatively easy to extend with native C++

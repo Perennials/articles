@@ -8,7 +8,7 @@ I've used it heavily in the implementation of at least one of my clients' web
 sites, which I built from scratch and everywhere else where I had to deal with
 the DOM. I enjoyed using quality third party plugins for jQuery like jQuery UI
 and I've had created several jQuery plugins which I published as open source.
-In the early days of jQuery I was hesitant to use it. I had trouble gasping
+In the early days of jQuery I was hesitant to use it. I had trouble grasping
 its, at the time, innovative approach and I failed to understand it. I was
 born and raised with native development (C, C++, D) and at the dawn of
 JavaScript frameworks I appreciated MooTools over jQuery which adopted more
@@ -40,7 +40,7 @@ this development anymore.
 
 ### It hurts web development
 
-It encouraging lazy coding and in turn poor programming practices. It offers a
+It encourages lazy coding and in turn poor programming practices. It offers a
 lot of convenience by providing an error-free layer and it successfully hides
 the internals of browsers' JavaScript. But using this layer comes at a price.
 It has a big performance cost and because jQuery code is rather expressive,
@@ -67,7 +67,7 @@ is registered. Similar to this different jQ plugins are used everywhere, DOM
 elements are created everywhere and in short everything becomes a flat mess of
 selectors and functions that steam from the jQuery object.
 
-Performance suffers. Now a days one does not need to support ancient browsers
+Performance suffers. Nowadays one does not need to support ancient browsers
 anymore. Most importantly Document.querySelectorAll() is supported everywhere,
 even in very old browsers like IE8, and many other APIs too. But the jQ
 function does not do one thing. It does million things, and even when one
