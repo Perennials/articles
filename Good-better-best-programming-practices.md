@@ -76,15 +76,15 @@ about coding this is beautiful code. Beautiful code is beautiful to write,
 beautiful to read, it performs beautiful result that is beautiful to make use
 of and beautiful to look at.
 
-- But sure there must be a perfect guideline to achieve this?
-- No there isn't.
-- Why are these fellows in GitHub and elsewhere putting these guidelines if
-  this isn't so?
-- They certainly are not wrong, they are sharing their valid experience.
-- So what guideline to follow?
-- Write beautiful code.
-- But what is it, this is so vague, what if my boss doesn't like it?
-- He will like it if it is beautiful.
+\- But sure there must be a perfect guideline to achieve this?  
+\- No there isn't.  
+\- Why are these fellows in GitHub and elsewhere putting these guidelines if
+  this isn't so?  
+\- They certainly are not wrong, they are sharing their valid experience.  
+\- So what guideline to follow?  
+\- Write beautiful code.  
+\- But what is it, this is so vague, what if my boss doesn't like it?  
+\- He will like it if it is beautiful.  
 ...
 
 OK, here is what I mean. For example lets discuss code structure. For example
