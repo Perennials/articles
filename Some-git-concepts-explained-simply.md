@@ -15,6 +15,22 @@ which is somehow different from the act of committing in SVN.
 If you are new to git I suggest you start with a good GUI client, like SourceTree,
 and take the concepts one by one as you move along.
 
+<!-- MarkdownTOC -->
+
+- [SSH keys](#ssh-keys)
+- [Local repositories](#local-repositories)
+- [Staging area](#staging-area)
+- [Sub modules](#sub-modules)
+- [Rebase](#rebase)
+- [Tricks](#tricks)
+	- [Copying branches between different repos](#copying-branches-between-different-repos)
+	- [Replacing history](#replacing-history)
+- [More](#more)
+- [Authors](#authors)
+
+<!-- /MarkdownTOC -->
+
+
 SSH keys
 --------
 There are different ways to authenticate with git, but the most reliable one
@@ -131,6 +147,28 @@ extra commit.
 Rebase must be used with caution, at least my GUI client says so, and this is
 not meant to explain everything about rebase, but just to try to give some
 insight into the idea behind it.
+
+Tricks
+------
+
+### Copying branches between different repos
+
+Sometimes you want to move a branch between repos. For example you want to
+copy the files, but you also want to preserve the commit history. This is
+easily achieved by adding a new remote and pushing the branch to the new
+remote.
+
+### Replacing history
+
+Sometimes one commits passwords or something else by mistake in the repo and
+it should be erased completely from history, not just reversed. This can be
+achieved with force push (among other methods). For example one can hard reset
+the branch to an earlier commit and force push. This will replace the remote
+history to the point where it was reset locally. Similarly, in order to
+preserve some of the commits, one can make a copy of the branch and cherry
+pick commits from the copy to the original branch which had it history erased.
+It should be noted that other people may still have the erased history and
+they can push it again.
 
 
 More
