@@ -1,6 +1,8 @@
 Object oriented programming with JS
 ===================================
 
+**This article is written in the times of ES5. ES6 now has syntax for classes.**
+
 While in JavaScript everything is an object, there is no concept of classes, so
 the classical understanding of OOP may be hard to apply. In JS each object acts
 as a bag of properties and each object has a prototype. Prototype is just
@@ -47,6 +49,7 @@ methods in this class? The function the we have declared has a property called
 we put in this prototype will be accessible to all instances.
 
 We can illustrate it simply like this:
+
 ```js
 Earthling.prototype = {
 	getType: function () {
@@ -60,6 +63,7 @@ enumerable and will show in our for-in loops and other places we probably don't
 want to. We can use `Object.defineProperty()` instead. This function is able to
 set properties in a more elaborate way and by default they are not enumerable.
 MDN is excellent resource to learn all available options.
+
 ```js
 Object.defineProperty( Earthling.prototype, 'getType', {
 	value: function () {
@@ -70,6 +74,7 @@ Object.defineProperty( Earthling.prototype, 'getType', {
 ```
 
 Lets look into inheritance. Inheritance is done by assigning a prototype.
+
 ```js
 // declare new type
 function Cat () {
@@ -106,6 +111,7 @@ if ( cat.getType() == 'cat' ) {
 
 And lastly we can have sort of static properties by putting them directly in the
 type, i.e. the function representing the type.
+
 ```js
 Cat.staticVar = 5;
 
@@ -123,6 +129,7 @@ Additionally defining types in this way may be tedious, so I've created
 Of course one can come up with many different syntaxes, but I wanted to have
 something without any overhead and keeping the native JS feel as much as
 possible in order to avoid confusion. Rewriting the examples with Prototype will look like this:
+
 ```js
 function Earthling () {
 	this.type = 'earthling';
@@ -148,7 +155,7 @@ Cat.extend( Earthling, {
 } );
 
 // this is not shorter actually, but just for consistency
-Cat.defineStatic( {
+Cat.static( {
 	staticVar: 5
 } );
 ```
